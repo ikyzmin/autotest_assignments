@@ -1,23 +1,29 @@
+"""
+Test functions for list
+"""
 
-def initList(m):
-	testList = []
-	for i in range(0,m):
-		testList.append(i)
-	return testList
+def init_list(size):
+    """Init list from 0 to m"""
+    test_list = []
+    for i in range(0, size):
+        test_list.append(i)
+    return test_list
 
-def duplicate(testList, a):
-	resultList = []
-	for i in testList:
-		resultList.append(i)
-		if i>=a:
-			resultList.append(i)
-	return resultList
+def duplicate(test_list, greater):
+    """dublicate elements which >= a"""
+    result_list = []
+    for i in test_list:
+        result_list.append(i)
+        if i >= greater:
+            result_list.append(i)
+    return result_list
 
-def sublist(testList,b):
-	resultList=[]
-	for i in testList:
-		if i<b:
-			resultList.append(i)
-	return resultList
+def sub_list(test_list, less):
+    """return sublist of elements which < b"""
+    result_list = []
+    for i in test_list:
+        if i < less:
+            result_list.append(i)
+    return result_list
 
 
